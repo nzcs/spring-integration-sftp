@@ -1,0 +1,12 @@
+integration:
+  sftp:
+    charset: UTF-8
+    temp-dir: src/test/resources/temp/
+    source:
+      host: localhost
+      port: 2244
+      user: user
+      password: pass
+      input-dir: /src/test/resources/source/
+      success-output-dir: /src/test/resources/success_output/
+      faulty-output-dir: /src/test/resources/faulty_output/

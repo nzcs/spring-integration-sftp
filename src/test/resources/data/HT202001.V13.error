@@ -1,0 +1,9 @@
+{
+  "2" : [ {
+    "key" : "GIRO_ACCOUNT_NO_LENGTH",
+    "value" : "09"
+  }, {
+    "key" : "VIBER_RECEIVE",
+    "value" : "X"
+  } ]
+}

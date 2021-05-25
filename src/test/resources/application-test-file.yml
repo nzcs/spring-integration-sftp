@@ -1,0 +1,7 @@
+integration:
+  file:
+    charset: UTF-8
+    input-dir: src/test/resources/source/
+    temp-dir: src/test/resources/temp/
+    success-output-dir: src/test/resources/success_output/
+    faulty-output-dir: src/test/resources/faulty_output/

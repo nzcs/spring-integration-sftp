@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    #    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:h2:mem:test;Mode=Oracle
+    #    url: jdbc:h2:file:~/Workspace/H2/routing;Mode=Oracle
+    #    url: jdbc:oracle:thin:@database2.ips.hu:1521/alpiq
+    #    username: ETRM_TRUNK_TOMCAT5
+    #    password: ETRM_TRUNK_TOMCAT5
+    #    initialization-mode: always
+    hikari:
+      poolName: Hikari
+  #      auto-commit: false
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    #      naming:
+    #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+          batch_size: 5000
+          order_inserts: true
+          order_updates: true
+
+
+logging:
+  level.org.springframework.jdbc: debug
