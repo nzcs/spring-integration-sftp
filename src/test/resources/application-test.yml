@@ -5,8 +5,8 @@ spring:
     url: jdbc:h2:mem:test;Mode=Oracle
     #    url: jdbc:h2:file:~/Workspace/H2/routing;Mode=Oracle
     #    url: jdbc:oracle:thin:@database2.ips.hu:1521/alpiq
-    #    username: ETRM_TRUNK_TOMCAT5
-    #    password: ETRM_TRUNK_TOMCAT5
+    username: as
+    password:
     #    initialization-mode: always
     hikari:
       poolName: Hikari

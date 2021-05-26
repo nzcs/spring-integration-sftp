@@ -53,7 +53,9 @@ public class FileProcessor {
                             .collect(Collectors.toList())
             );
 
-            return FileUtil.of(path.toFile().getParent(), path.toFile().getName() + ".error")
+            return result.getErrors().isEmpty()
+                    ? null
+                    : FileUtil.of(path.toFile().getParent(), path.toFile().getName() + ".error")
                     .withContent(result.getErrors());
 
         } catch (Throwable t) {
